@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./index.js"></script>
+        <script>
+            function increaseFontSize(){
+                document.getElementById('paragraph').style.fontSize='35px'
+            }
+            function changeTitle(){
+                document.getElementById('paragraph').innerHTML = 'Im from Javascript'
+            }
+        </script>
+    </head>
+    <body>
+        <p id="paragraph">Javascript</p>
+        <button onclick='changeTitle()'>Click Me</button>
+    </body>
+</html>
