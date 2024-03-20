@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener Example</title>
+</head>
+<body>
+    <!-- Button element -->
+    <button id="myButton">Click me</button>
+
+    <!-- Script to add event listener -->
+    <script>
+        // Select the button element
+        var button = document.getElementById("myButton");
+
+        // Add event listener for click event
+        button.addEventListener("click", function(event) {
+            // Callback function executes when button is clicked
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>

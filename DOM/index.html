@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML DOM Methods Example</title>
+</head>
+<body>
+    <!-- Example for getElementById() method -->
+    <div id="myDiv">Hello, world!</div>
+
+    <!-- Script to demonstrate getElementById() method -->
+    <script>
+        var element = document.getElementById("myDiv");
+        console.log(element.innerHTML); // Output: Hello, world!
+    </script>
+
+    <!-- Example for getElementsByClassName() method -->
+    <p class="paragraph">Paragraph 1</p>
+    <p class="paragraph">Paragraph 2</p>
+
+    <!-- Script to demonstrate getElementsByClassName() method -->
+    <script>
+        var elements = document.getElementsByClassName("paragraph");
+        console.log(elements.length); // Output: 2
+    </script>
+
+    <!-- Example for getElementsByTagName() method -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- Script to demonstrate getElementsByTagName() method -->
+    <script>
+        var elements = document.getElementsByTagName("li");
+        console.log(elements.length); // Output: 2
+    </script>
+
+    <!-- Example for querySelector() method -->
+    <div class="container">
+        <p>Hello, world!</p>
+    </div>
+
+    <!-- Script to demonstrate querySelector() method -->
+    <script>
+        var element = document.querySelector(".container p");
+        console.log(element.innerHTML); // Output: Hello, world!
+    </script>
+</body>
+</html>

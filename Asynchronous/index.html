@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Creating a new worker
+        const worker = new Worker('worker.js');
+
+        // Sending a message to the worker
+        worker.postMessage({ data: 'Hello from main thread' });
+
+        // Listening for messages from the worker
+        worker.onmessage = function (event) {
+            console.log('Message from worker:', event.data);
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

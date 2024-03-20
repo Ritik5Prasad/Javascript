@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>More DOM Manipulation Examples</title>
+</head>
+<body>
+    <!-- Original content -->
+    <div id="container">
+        <p id="paragraph">This is a paragraph.</p>
+    </div>
+
+    <!-- Script to demonstrate more DOM manipulation -->
+    <script>
+        // Create a new element
+        var newElement = document.createElement("h2");
+        newElement.textContent = "New Heading";
+
+        // Append the new element to the document body
+        document.body.appendChild(newElement);
+
+        // Remove the paragraph element
+        var paragraph = document.getElementById("paragraph");
+        var container = document.getElementById("container");
+        container.removeChild(paragraph);
+
+        // Replace the removed paragraph with a new one
+        var newParagraph = document.createElement("p");
+        newParagraph.textContent = "This is a new paragraph.";
+        container.appendChild(newParagraph);
+
+        // Replace the h2 element with a new one
+        var oldHeading = document.querySelector("h2");
+        var newHeading = document.createElement("h1");
+        newHeading.textContent = "Replaced Heading";
+        document.body.replaceChild(newHeading, oldHeading);
+
+        // Using document.write() to add content
+        document.write("<p>This content is added dynamically using document.write().</p>");
+    </script>
+</body>
+</html>
